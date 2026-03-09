@@ -15,4 +15,8 @@
   font-style: normal;
   display: flex;
   justify-content: center;
+  text-shadow: #ffffff 2px 2px;
+  color: #7ae9ff;
+  -webkit-text-stroke: 3px #FFF;
+  text-stroke: 3px #FFF;
 }
