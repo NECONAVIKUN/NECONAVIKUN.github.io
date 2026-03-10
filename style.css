@@ -27,3 +27,12 @@ nav {
   height: 140px;
   background-color: red;
 }
+.yukkurisiteittene p{
+  font-family:"Zen Maru Gothic", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #484848;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
