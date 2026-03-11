@@ -23,6 +23,7 @@
   text-stroke: 2px #7ae9ff;
 }
 nav {
+  top:0
   width: 100%;
   height: 350px;
   background-color: #DCF4FF;
