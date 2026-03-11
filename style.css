@@ -125,3 +125,14 @@ body{
     transform: translateY(0);
   }
 }
+.title-r {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  -webkit-text-stroke: 2px red;
+  text-stroke: 2px red;
+  white-space: nowrap;
+}
