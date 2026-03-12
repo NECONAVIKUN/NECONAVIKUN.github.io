@@ -87,7 +87,7 @@ body{
   display: flex; /*横並び*/
 }
 .flex p{
-  margin: 20px;
+  margin: 10px;
 }
 .flex .image {
   width: 640px;
