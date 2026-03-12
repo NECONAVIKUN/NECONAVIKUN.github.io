@@ -168,7 +168,7 @@ a {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  -webkit-text-stroke: 2px #dadce0;
-  text-stroke: 2px #dadce0;
+  -webkit-text-stroke: 2px #bdbec1;
+  text-stroke: 2px #bdbec1;
   white-space: nowrap;
 }
