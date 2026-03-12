@@ -175,3 +175,7 @@ a {
 hr{
   margin: 0;
 }
+.nav_s{
+  cursor: pointer;
+  transition: transform 0.2s;
+}
