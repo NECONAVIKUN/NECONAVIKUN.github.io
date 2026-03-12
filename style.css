@@ -172,3 +172,6 @@ a {
   text-stroke: 2px #bdbec1;
   white-space: nowrap;
 }
+hr{
+  margin: 0;
+}
