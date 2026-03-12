@@ -55,7 +55,7 @@ body{
   white-space: nowrap;
 }
 .button{
-    background: #007bff;
+  background: #007bff;
   color: white;
   border: none;
   padding: 12px 32px;
@@ -87,7 +87,7 @@ body{
   display: flex; /*横並び*/
 }
 .flex p{
-  margin: 10px;
+  margin: 23px;
 }
 .flex .image {
   width: 640px;
@@ -110,6 +110,17 @@ body{
 .flex .button {
   margin: 10px 0 0;
   padding: 0;
+    background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+
   
   &:hover {
     background: #0056b3;
@@ -130,4 +141,7 @@ body{
   -webkit-text-stroke: 2px red;
   text-stroke: 2px red;
   white-space: nowrap;
+}
+a {
+  text-decoration: none;
 }
