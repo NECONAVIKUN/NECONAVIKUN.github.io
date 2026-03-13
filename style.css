@@ -190,3 +190,7 @@ hr{
   text-stroke: 2px #3c4043;
   white-space: nowrap;
 }
+nav_text{
+  cursor: pointer;
+  transition: transform 0.2s;
+}
