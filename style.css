@@ -9,6 +9,7 @@ h1 {
   white-space: nowrap;
 }
 .nav_text p { font-size: 30px !important; }
+.image img { margin-left: 10%; }
 header {
   top: 0;
   width: 100%;
