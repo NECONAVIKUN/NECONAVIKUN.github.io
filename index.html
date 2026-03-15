@@ -33,9 +33,18 @@
         <img src="marisa-migi.webp" alt="魔理沙" width="256" height="144" id="marisa" class="nav_s right-ws-256" tabindex="0">
         <img src="reimu-hidari.webp" alt="霊夢" width="256" height="144" id="reimu" class="nav_s" tabindex="0">
       </span>
-      <audio id="reimu_s" src="reimu.weba"></audio>
-      <audio id="marisa_s" src="marisa.weba"></audio>
-      <audio id="text_s" src="text_s.weba"></audio>
+      <audio id="reimu_s">
+        <source srcset="reimu.weba" type="audio/weba">
+        <source srcset="reimu.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="marisa_s">
+        <source srcset="marisa.weba" type="audio/weba">
+        <source srcset="marisa.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="text_s">
+        <source srcset="text_s.weba" type="audio/weba">
+        <source srcset="text_s.mp3" type="audio/mpeg">
+      </audio>
     </header>
     <hr>
     <main id="main">
