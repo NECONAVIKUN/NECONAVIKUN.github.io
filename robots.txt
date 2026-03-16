@@ -1,0 +1,3 @@
+User-Agent:*
+Disallow:/example/
+Sitemap:http://NECONAVIKUN.github.io/NECONAVIyukkuri-haihu.github.io/sitemap.xml
