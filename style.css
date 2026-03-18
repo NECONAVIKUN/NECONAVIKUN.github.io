@@ -220,3 +220,6 @@ section .button1 {
 .footer_link a {
   color: #ffffff;
 }
+footer ul{
+  display: none;
+}
