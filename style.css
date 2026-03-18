@@ -202,7 +202,3 @@ section .button1 {
   -webkit-text-stroke: 1px #484848;
   white-space: nowrap;
 }
-.right .button{
-  display: flex;
-  justify-content: center;
-}
