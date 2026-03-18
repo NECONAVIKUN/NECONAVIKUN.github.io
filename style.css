@@ -205,7 +205,7 @@ section .button1 {
   white-space: nowrap;
   font-size:20px;
 }
-.footer_link a{
+.footer_link {
   font-family:"Zen Maru Gothic", sans-serif;
   font-weight: 900;
   font-style: normal;
