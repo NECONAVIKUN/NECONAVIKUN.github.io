@@ -166,3 +166,27 @@ footer .button {
 li {
   list-style: none;
 }
+section2 .button {
+  margin: 10px 0 0;
+  padding: 0;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  font-size: 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  font-family:"Zen Maru Gothic", sans-serif;
+  font-style: normal;
+  text-stroke: 0.75px #000000;
+  -webkit-text-stroke: 0.75px #000000;
+  white-space: nowrap;
+  &:hover, &:focus {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}
