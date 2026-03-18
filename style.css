@@ -93,8 +93,6 @@ section p { margin: 23px; }
 .right {
   margin: 0 0 0 20px;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 section .button {
   margin: 10px 0 0;
@@ -203,4 +201,8 @@ section .button1 {
   text-stroke: 1px #484848;
   -webkit-text-stroke: 1px #484848;
   white-space: nowrap;
+}
+.right .button{
+  display: flex;
+  justify-content: center;
 }
