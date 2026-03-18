@@ -216,3 +216,6 @@ section .button1 {
   white-space: nowrap;
   text-decoration: none;
 }
+.footer_link a{
+  color: #ffffff;
+}
