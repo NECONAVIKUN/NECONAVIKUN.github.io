@@ -230,3 +230,6 @@ section .button1 {
 li {
   margin: 10px;
 }
+footer p{
+  margin: 0;
+}
