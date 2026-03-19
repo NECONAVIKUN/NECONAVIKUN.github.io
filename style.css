@@ -139,6 +139,7 @@ hr {
 ul {
   display: flex;
   justify-content: center;
+  color: white;
 }
 footer .button {
   margin: 0px;
@@ -224,4 +225,7 @@ section .button1 {
   font-size: 20px;
   white-space: nowrap;
   text-decoration: none;
+}
+li {
+  margin: 5px;
 }
