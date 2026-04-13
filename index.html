@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; img-src 'self'; media-src 'self'; manifest-src 'self'; font-src 'self' https://fonts.googleapis.com; base-uri 'none'; require-trusted-types-for 'script'; upgrade-insecure-requests">
+    <meta name="referrer" content="same-origin">
     <meta name="author" content="ねこナビくん">
     <meta name="description" content="私、ねこナビくんのホームページです。">
     <meta name="color-scheme" content="only light">
@@ -65,7 +67,7 @@
     </main>
     <hr>
     <footer class="footer">
-      <p><img src="Space.png" width="1px" height="10px" alt=""></p>
+      <p><img src="/space.webp" width="1px" height="10px" alt=""></p>
       <ul>
         <li class="footer_link" aria-current="page"><a href="/">ホーム</a></li>
         <li class="footer_link"><a href="/yukkuri/">私式ゆっくり配布ページ</a></li>
@@ -75,15 +77,18 @@
       <p><img src="/space.webp" width="1px" height="10px" alt=""></p>
       <div class="sns_icon">
         <img src="/space.webp" width="5px" height="1px">
-        <a href="https://www.youtube.com/@YUKKURI-NECONAVIKUN">
+        <a href="https://www.youtube.com/@YUKKURI-NECONAVIKUN" aria-label="ネコナビくんのYouTube">
         <img src="/youtube_icon.png" title="私のYouTubeチャンネルです。" alt="YouTubeロゴ" width="25px" height="25px">
         </a>
           <img src="/space.webp" width="10px" height="1px">
-        <a href="https://x.com/23560comjp2/">
+        <a href="https://x.com/23560comjp2/" aria-label="ネコナビくんのX">
           <img src="/x_icon.png" title="私のXアカウントです。" alt="Xロゴ" width="25px" height="25px">
         </a>
-        <a href="/secret/">
-          <img src="space.webp" alt="" width="25px" height="25px">
+        <a href="https://scratch.mit.edu/users/23560comjp/" alt="ネコナビくんのScratch">
+          <img src="" title="私のScratchアカウントです。" alt="Scratch" width="25px" height="25px">
+        </a>
+        <a href="/secret/" aria-label="秘密ページ">
+          <img src="/space.webp" alt="" width="25px" height="25px">
         </a>
       </div>
     </footer>
