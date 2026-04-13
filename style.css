@@ -250,3 +250,6 @@ footer p{
   -webkit-text-stroke: 1.5px #484848;
   font-size:20px;
 }
+.guideline_text a{
+  display: inline;
+}
