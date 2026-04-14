@@ -253,3 +253,6 @@ footer p{
 .guideline_text a{
   display: inline;
 }
+main{
+  height: 100% - 460px;
+}
