@@ -256,3 +256,8 @@ footer p{
 main{
   height: 100% - 460px;
 }
+.image img {
+  margin-left: 10%;
+  margin-top: 60px;
+}
+
