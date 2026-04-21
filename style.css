@@ -260,4 +260,11 @@ main{
   margin-left: 10%;
   margin-top: 5px;
 }
-
+.image2 {
+  width: 640px;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
