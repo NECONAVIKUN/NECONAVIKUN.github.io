@@ -263,7 +263,7 @@ main{
 .image2 {
   width: 640px;
   height: 360px;
-  margin: 10;
+  margin-top: 5px;
   padding: 0;
   overflow: hidden;
   position: relative;
