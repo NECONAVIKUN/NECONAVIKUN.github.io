@@ -268,3 +268,8 @@ main{
   overflow: hidden;
   position: relative;
 }
+}
+.title-s {
+  text-stroke: 2px #1d853c;
+  -webkit-text-stroke: 2px #1d853c;
+}
