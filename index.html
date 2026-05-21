@@ -58,7 +58,9 @@
         var e = document.getElementById("count");
         runTransaction(r, function(v) {
           if (!v) { return; }
-          return Number(v) + 1;
+          var next = Number(v) + 1;
+          e.textContent = next;
+          return next;
         });
       </script>
       <span class="picture">
