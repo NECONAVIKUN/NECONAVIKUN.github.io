@@ -6,7 +6,7 @@ const button1 = document.getElementById('m_button');
 const button2 = document.getElementById('<button');
 const button3 = document.getElementById('>button');
 function t (){  document.getElementById('quiz').innerHTML = `      <h2　id="text1">おめでとう！</h2>
-      <h2 id="text2" hidden></h2>`
+      <h2 id="text2">　</h2>`
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
@@ -15,7 +15,7 @@ function t (){  document.getElementById('quiz').innerHTML = `      <h2　id="tex
 }
 function f (){
   document.getElementById('quiz').innerHTML = `      <h2　id="text1">残念</h2>
-      <h2 id="text2" hidden></h2>`
+      <h2 id="text2">　</h2>`
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
