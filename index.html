@@ -56,9 +56,9 @@
         };
         var r = ref(getDatabase(initializeApp(firebaseConfig)), "count");
         var e = document.getElementById("count");
-        update(r, {
-          "count": increment(1)
-        }).catch(function(err) {});
+        try {
+          update(r, { "count": increment(1) }).catch(function(err) {});
+        } catch(err) {}
         onValue(ref(db, "count"), function(snapshot) {
           var val = snapshot.val();
           e.textContent = (val === null) ? 0 : val;
