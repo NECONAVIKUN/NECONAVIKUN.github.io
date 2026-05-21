@@ -56,10 +56,14 @@
         };
         var r = ref(getDatabase(initializeApp(firebaseConfig)), "count");
         var e = document.getElementById("count");
-        runTransaction(r, function(v) {
-          var next = Number(v) + 1;
-          e.textContent = next;
-          return next;
+        update(r, {
+          "count": increment(1)
+        }).catch(function(err) {});
+        onValue(ref(db, "count"), function(snapshot) {
+          var val = snapshot.val();
+          e.textContent = (val === null) ? 0 : val;
+        }, function(err) {
+          e.textContent = "読み込みエラー";
         });
       </script>
       <span class="picture">
