@@ -57,7 +57,6 @@
         var r = ref(getDatabase(initializeApp(firebaseConfig)), "count");
         var e = document.getElementById("count");
         runTransaction(r, function(v) {
-          if (!v) { return; }
           var next = Number(v) + 1;
           e.textContent = next;
           return next;
