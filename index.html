@@ -38,8 +38,29 @@
       <div role="button" class="nav_text" id="text" tabindex="0">
         <p aria-hidden="true">＿人人人人人人人人人人人人人＿</p>
         <p><span aria-hidden="true">＞　</span>ゆっくり見ていってね<span aria-hidden="true">☆　＜</span></p>
-        <p aria-hidden="true">￣ＹＹＹＹＹＹＹＹＹＹＹＹＹ￣</p>
+        <p aria-hidden="true">￣ＹＹＹＹＹＹＹＹＹＹＹＹＹ￣</p><br><br>
       </div>
+      <div>アクセスカウンター: <span id="count">読み込み中...</span></div>
+      <script type="module">
+        "use strict";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+        import { getDatabase, ref, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-database.js";
+        var firebaseConfig = {
+          apiKey: "AIzaSyAVTYWopwaZLyRw5qWXK7GqXccPNdo7R0U",
+          authDomain: "neconavikun-homepage.firebaseapp.com",
+          databaseURL: "https://neconavikun-homepage-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "neconavikun-homepage",
+          storageBucket: "neconavikun-homepage.firebasestorage.app",
+          messagingSenderId: "130715944223",
+          appId: "1:130715944223:web:28eb690a6b1c73989c1c2a"
+        };
+        var r = ref(getDatabase(initializeApp(firebaseConfig)), "count");
+        var e = document.getElementById("count");
+        runTransaction(r, function(v) {
+          if (!v) { return; }
+          return Number(v) + 1;
+        });
+      </script>
       <span class="picture">
         <img role="button" src="/marisa-migi.webp" alt="魔理沙" width="256" height="144" id="marisa" class="nav_s right-ws-256" tabindex="0">
         <img role="button" src="/reimu-hidari.webp" alt="霊夢" width="256" height="144" id="reimu" class="nav_s" tabindex="0">
