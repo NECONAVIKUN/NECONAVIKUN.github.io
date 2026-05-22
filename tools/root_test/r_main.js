@@ -5,8 +5,12 @@ let q2 = "";
 const button1 = document.getElementById('m_button');
 const button2 = document.getElementById('<button');
 const button3 = document.getElementById('>button');
-function t (){  document.getElementById('quiz').innerHTML = `      <h2 id="text1">おめでとう！</h2>
-      <h2 id="text2">　</h2>`
+function t (){  document.getElementById('quiz').innerHTML = `      <div class="main_text">
+            <h2 id="text1">おめでとう！</h2>
+      </div>
+      <div class="main_text">
+            <h2 id="text2">　</h2>
+      </div>`
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
