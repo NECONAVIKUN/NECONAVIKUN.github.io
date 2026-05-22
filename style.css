@@ -283,3 +283,6 @@ main{
   white-space: nowrap;
   font-size:50px;
 }
+#quiz {
+  display: none;
+}
