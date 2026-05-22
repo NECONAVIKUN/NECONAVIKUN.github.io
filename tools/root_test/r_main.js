@@ -104,10 +104,10 @@ function button_push3 (){
   };
 };
 function button_push4 (){
-  button1.hidden: false;
-  button2.hidden: true;
-  button3.hidden: true;
-  button4.hidden: true;
+  button1.hidden = false;
+  button2.hidden = true;
+  button3.hidden = true;
+  button4.hidden = true;
   button1.textContent = スタート！
   document.getElementById('quiz').innerHTML = `      <div class="main_text">
             <h2 id="text1">JavaScript式√どっちが大きい?</h2>
