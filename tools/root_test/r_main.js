@@ -20,8 +20,6 @@ function t (){  document.getElementById('quiz').innerHTML = `      <div class="m
 function f (){
   document.getElementById('quiz').innerHTML = `      <div class="main_text">
             <h2 id="text1">残念</h2>
-      </div>
-      <div class="main_text">
             <h2 id="text2">　</h2>
       </div>`
   button1.hidden = false;
@@ -73,15 +71,19 @@ function button_push1 (){
     button2.hidden = false;
     button3.hidden = false;
     create_quiz();
-    document.getElementById('quiz').innerHTML = `      <h2 id="text1">どっちが大きい?</h2>
-      <h2 id="text2">${quiz1}　${quiz2}</h2>`
+    document.getElementById('quiz').innerHTML = `            <div class="main_text">
+                <h2 id="text1">どっちが大きい?</h2>
+                <h2 id="text2">${quiz1}　${quiz2}</h2>
+    </div>`
   }else if(button1.textContent == "次の問題へ"){    
     button1.hidden = true;
     button2.hidden = false;
     button3.hidden = false;
     create_quiz();
-    document.getElementById('quiz').innerHTML = `      <h2 id="text1">どっちが大きい?</h2>
-      <h2 id="text2">${quiz1}　${quiz2}</h2>`
+    document.getElementById('quiz').innerHTML = `        <div class="main_text">
+                <h2 id="text1">どっちが大きい?</h2>
+                <h2 id="text2">${quiz1}　${quiz2}</h2>
+            </div>`
   };
 };
 function button_push2 (){
