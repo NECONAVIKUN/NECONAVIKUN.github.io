@@ -5,28 +5,29 @@ let q2 = "";
 const button1 = document.getElementById('m_button');
 const button2 = document.getElementById('<button');
 const button3 = document.getElementById('>button');
+const button4 = document.getRlementById('e_button');
 function t (){  document.getElementById('quiz').innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
-      </div>
-      <div class="main_text">
             <h2 id="text2">　</h2>
       </div>`
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
-  button1.textContent = "次の問題へ"
+  button4.hidden = false;
+  button1.textContent = "次の問題へ";
   alert("正解！");
 }
 function f (){
   document.getElementById('quiz').innerHTML = `      <div class="main_text">
             <h2 id="text1">残念</h2>
             <h2 id="text2">　</h2>
-      </div>`
+      </div>`;
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
-  button1.textContent = "次の問題へ"
-  alert("不正解！")
+  button4.hidden = false;
+  button1.textContent = "次の問題へ";
+  alert("不正解！");
 }
 
 function create_quiz (){
@@ -70,20 +71,22 @@ function button_push1 (){
     button1.hidden = true;
     button2.hidden = false;
     button3.hidden = false;
+    button4.hidden = true;
     create_quiz();
     document.getElementById('quiz').innerHTML = `            <div class="main_text">
                 <h2 id="text1">どっちが大きい?</h2>
                 <h2 id="text2">${quiz1}　${quiz2}</h2>
-    </div>`
+    </div>`;
   }else if(button1.textContent == "次の問題へ"){    
     button1.hidden = true;
     button2.hidden = false;
     button3.hidden = false;
+    button4.hidden = true;
     create_quiz();
     document.getElementById('quiz').innerHTML = `        <div class="main_text">
                 <h2 id="text1">どっちが大きい?</h2>
                 <h2 id="text2">${quiz1}　${quiz2}</h2>
-            </div>`
+            </div>`;
   };
 };
 function button_push2 (){
@@ -98,8 +101,20 @@ function button_push3 (){
     t();
   }else{
     f();
-    };
   };
+};
+function button_push4 (){
+  button1.hidden: false;
+  button2.hidden: true;
+  button3.hidden: true;
+  button4.hidden: true;
+  button1.textContent = スタート！
+  document.getElementById('quiz').innerHTML = `      <div class="main_text">
+            <h2 id="text1">JavaScript式√どっちが大きい?</h2>
+            <h2 id="text2">？　？</h2>
+      </div>`;
+};
 button1.addEventListener("click",button_push1);
 button2.addEventListener("click",button_push2);
 button3.addEventListener("click",button_push3);
+button4.addEventListener("click",button_push4);
