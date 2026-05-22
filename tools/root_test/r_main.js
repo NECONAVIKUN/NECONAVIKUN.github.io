@@ -5,7 +5,7 @@ let q2 = "";
 const button1 = document.getElementById('m_button');
 const button2 = document.getElementById('<button');
 const button3 = document.getElementById('>button');
-const button4 = document.getRlementById('e_button');
+const button4 = document.getElementById('e_button');
 function t (){  document.getElementById('quiz').innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
             <h2 id="text2">　</h2>
