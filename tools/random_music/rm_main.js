@@ -32,7 +32,6 @@ btnGen.addEventListener('click', () => {
         totalDuration += len; // 全体の長さを足していく
     }
 
-    statusText.innerText = `ランダムな楽譜が完成！(合計: ${totalDuration.toFixed(2)}秒)`;
     btnPlay.disabled = false;
     btnExport.disabled = false;
 });
