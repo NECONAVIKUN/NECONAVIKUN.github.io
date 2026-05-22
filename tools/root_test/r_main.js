@@ -18,8 +18,12 @@ function t (){  document.getElementById('quiz').innerHTML = `      <div class="m
   alert("正解！");
 }
 function f (){
-  document.getElementById('quiz').innerHTML = `      <h2 id="text1">残念</h2>
-      <h2 id="text2">　</h2>`
+  document.getElementById('quiz').innerHTML = `      <div class="main_text">
+            <h2 id="text1">残念</h2>
+      </div>
+      <div class="main_text">
+            <h2 id="text2">　</h2>
+      </div>`
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
