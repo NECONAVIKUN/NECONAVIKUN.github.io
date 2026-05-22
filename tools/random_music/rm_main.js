@@ -74,14 +74,12 @@ btnPlay.addEventListener('click', () => {
     
     currentAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
     setupAudioGraph(currentAudioCtx);
-    statusText.innerText = "♪ 再生中...";
 });
 
 // ==========================================
 // ③ 裏側で高速録音（レンダリング）してWAV化して保存
 // ==========================================
 btnExport.addEventListener('click', async () => {
-    statusText.innerText = "WAVファイルを作成中...";
     btnExport.disabled = true;
 
     // スピーカーから音を出さずに、一瞬で裏で曲を計算する専用のContext（44100Hzのモノラル）
@@ -109,7 +107,6 @@ btnExport.addEventListener('click', async () => {
     a.click();
     
     URL.revokeObjectURL(url);
-    statusText.innerText = "ダウンロード完了！";
     btnExport.disabled = false;
 });
 
