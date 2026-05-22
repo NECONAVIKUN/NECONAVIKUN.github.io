@@ -46,9 +46,15 @@ function create_quiz (){
       q1 = Number(rdm2);
     };
   } else {
-    var rdm2 = Number(Math.floor( Math.random() * 99) + 1);
-    quiz1 = rdm2;
-    q1 = Number(rdm2*rdm2);
+    if (rdm5 == "1"){
+      var rdm2 = Number(Math.floor( Math.random() * 99) + 1);
+      quiz1 = "-" + rdm2;
+      q1 = Number(-1*rdm2*rdm2);
+    }else{
+      var rdm2 = Number(Math.floor( Math.random() * 99) + 1);
+      quiz1 = rdm2;
+      q1 = Number(rdm2*rdm2);
+    };
   };
   if (rdm3 == "1"){
     if (rdm6 == "1"){
@@ -61,9 +67,15 @@ function create_quiz (){
       q2 = Number(rdm4);
     }
   }else {
-    var rdm4 = Number(Math.floor( Math.random() * 99) + 1);
-    quiz2 = rdm4;
-    q2 = Number(rdm4*rdm4);
+    if (rdm6 == "1"){
+      var rdm4 = Number(Math.floor( Math.random() * 99) + 1);
+      quiz2 = "-" + rdm4;
+      q2 = Number(-1*rdm4*rdm4);
+    }else{
+      var rdm4 = Number(Math.floor( Math.random() * 99) + 1);
+      quiz2 = rdm4;
+      q2 = Number(rdm4*rdm4);
+    };
   };
 };
 function button_push1 (){
