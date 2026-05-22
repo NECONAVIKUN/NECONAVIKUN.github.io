@@ -284,5 +284,5 @@ main{
   font-size:50px;
 }
 #quiz {
-  display: none;
+  display: block;
 }
