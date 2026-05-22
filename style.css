@@ -286,3 +286,6 @@ main{
 #quiz {
   display: block;
 }
+#buttons button{
+  margin: 5px
+}
