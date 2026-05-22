@@ -277,8 +277,6 @@ main{
   font-weight: 900;
   font-style: normal;
   color: #ffffff;
-  display: flex;
-  justify-content: center;
   margin: 2px;
   text-stroke: 1.5px #484848;
   -webkit-text-stroke: 1.5px #484848;
