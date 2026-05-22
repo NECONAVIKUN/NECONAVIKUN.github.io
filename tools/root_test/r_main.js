@@ -65,14 +65,14 @@ function button_push1 (){
     button2.hidden = false;
     button3.hidden = false;
     create_quiz();
-    document.getElementById('quiz').innerHTML = `      <h2　id="text1">どっちが大きい?</h2>
+    document.getElementById('quiz').innerHTML = `      <h2 id="text1">どっちが大きい?</h2>
       <h2 id="text2">${quiz1}　${quiz2}</h2>`
   }else if(button1.textContent == "次の問題へ"){    
     button1.hidden = true;
     button2.hidden = false;
     button3.hidden = false;
     create_quiz();
-    document.getElementById('quiz').innerHTML = `      <h2　id="text1">どっちが大きい?</h2>
+    document.getElementById('quiz').innerHTML = `      <h2 id="text1">どっちが大きい?</h2>
       <h2 id="text2">${quiz1}　${quiz2}</h2>`
   };
 };
