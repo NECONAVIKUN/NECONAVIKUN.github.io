@@ -3,18 +3,18 @@ var quiz1;
 var quiz2;
 var q1;
 var q2;
-var button1 = document.getElementById('m_button');
-var button2 = document.getElementById('<button');
-var button3 = document.getElementById('>button');
-var button4 = document.getElementById('e_button');
-function correct () {  document.getElementById('quiz').innerHTML = `      <div class="main_text">
+var button1 = document.getElementById("m_button");
+var button2 = document.getElementById("<button");
+var button3 = document.getElementById(">button");
+var button4 = document.getElementById("e_button");
+function correct () {  document.getElementById("quiz").innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
             <h2 id="text2">　</h2>
       </div>`;
-  button1.hidden = false;
-  button2.hidden = true;
-  button3.hidden = true;
-  button4.hidden = false;
+  button1.disabled = false;
+  button2.disabled = true;
+  button3.disabled = true;
+  button4.disabled = false;
   button1.textContent = "次の問題へ";
   alert("正解！");
 }
@@ -23,10 +23,10 @@ function incorrect() {
             <h2 id="text1">残念</h2>
             <h2 id="text2">　</h2>
       </div>`;
-  button1.hidden = false;
-  button2.hidden = true;
-  button3.hidden = true;
-  button4.hidden = false;
+  button1.disabled = false;
+  button2.disabled = true;
+  button3.disabled = true;
+  button4.disabled = false;
   button1.textContent = "次の問題へ";
   alert("不正解！");
 }
@@ -82,20 +82,20 @@ function create_quiz () {
 }
 button1.addEventListener("click", function() {
   if (button1.textContent == "スタート！"){
-    button1.hidden = true;
-    button2.hidden = false;
-    button3.hidden = false;
-    button4.hidden = true;
+    button1.disabled = true;
+    button2.disabled = false;
+    button3.disabled = false;
+    button4.disabled = true;
     create_quiz();
     document.getElementById('quiz').innerHTML = `            <div class="main_text">
                 <h2 id="text1">どっちが大きい?</h2>
                 <h2 id="text2">${quiz1}　${quiz2}</h2>
     </div>`;
   } else if (button1.textContent == "次の問題へ") {    
-    button1.hidden = true;
-    button2.hidden = false;
-    button3.hidden = false;
-    button4.hidden = true;
+    button1.disabled = true;
+    button2.disabled = false;
+    button3.disabled = false;
+    button4.disabled = true;
     create_quiz();
     document.getElementById('quiz').innerHTML = `        <div class="main_text">
                 <h2 id="text1">どっちが大きい?</h2>
@@ -118,13 +118,13 @@ button3.addEventListener("click", function() {
   }
 });
 button4.addEventListener("click", function() {
-  button1.hidden = false;
-  button2.hidden = true;
-  button3.hidden = true;
-  button4.hidden = true;
+  button1.disabled = false;
+  button2.disabled = true;
+  button3.disabled = true;
+  button4.disabled = true;
   button1.textContent = "スタート！"
   document.getElementById('quiz').innerHTML = `      <div class="main_text">
             <h2 id="text1">JavaScript式√どっちが大きい?</h2>
-            <h2 id="text2">？　？</h2>
+            <h2 id="text2">スタートボタンを押してね！</h2>
       </div>`;
 });
