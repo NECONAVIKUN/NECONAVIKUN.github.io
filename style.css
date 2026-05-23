@@ -94,10 +94,9 @@ section {
   color: #ffffff;
   display: flex;
   justify-content: center;
+  font-size: large !important;
   margin: 0;
   -webkit-text-stroke: 2px #484848;
-  font-size: large !important;
-  white-space: nowrap;
 }
 .picture {
   justify-content: space-between; 
@@ -111,15 +110,6 @@ section {
   height: auto;
 }
 .nav_text p {
-  font-weight: 900;
-  font-size: 30px !important;
-  font-style: normal;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  -webkit-text-stroke: 2px #484848;
-  white-space: nowrap;
 }
 .picture {
   display: flex;
