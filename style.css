@@ -103,7 +103,7 @@ section {
   justify-content: center;
   margin: 0;
   -webkit-text-stroke: 2px #484848;
-  font-size: xx-large !important;
+  font-size: large !important;
   white-space: nowrap;
 }
 .picture {
@@ -154,21 +154,16 @@ section {
   margin-left: 20vw;
 }
 h1 {
-  font-weight: 900 !important;
-  -webkit-text-stroke: 2px #7ae9ff;
-}
-.title {
   display: flex;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
-  font-size: xxx-large;
   font-weight: 900;
   font-style: normal;
   margin: 0;
   padding: 0;
   justify-content: center;
   color: #ffffff;
-  white-space: nowrap;
+  -webkit-text-stroke: 2px #7ae9ff;
 }
 .title-r { -webkit-text-stroke: 2px rgb(255 0 0); }
 .title-m { -webkit-text-stroke: 2px rgb(255 255 0); }
@@ -236,3 +231,6 @@ ul {
   & a { display: inline; }
 }
 #quiz { display: block; }
+@media screen and (max-width: 767px) {
+  
+}
