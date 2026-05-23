@@ -45,7 +45,6 @@ main {
   justify-content: center;
   margin: 2px;
   -webkit-text-stroke: 1.5px #484848;
-  white-space: nowrap;
   font-size: large;
 }
 footer {
@@ -61,7 +60,6 @@ footer {
     background-color: #007bff;
     padding: 10px 32px;
     font-size: 20px;
-    white-space: nowrap;
     -webkit-text-stroke: 0.75px #000000;
   }
 }
