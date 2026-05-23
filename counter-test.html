@@ -16,9 +16,8 @@
         var r = ref(d, "count");
         var e = document.getElementById("count");
         runTransaction(r, function(v) { return (v || 0) + 1; }).catch(function(err){});
-        onValue(ref(d, "count"), function(snapshot) {
-          var val = snapshot.val();
-          e.textContent = (val === null) ? 0 : val;
+        onValue(ref(d, "count"), function(s) {
+          e.textContent = s.val();
         }, function(err) {
           e.textContent = "読み込みエラー";
         });
