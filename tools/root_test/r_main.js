@@ -1,15 +1,16 @@
-let quiz1 = "";
-let quiz2 = "";
-let q1 = "";
-let q2 = "";
-const button1 = document.getElementById('m_button');
-const button2 = document.getElementById('<button');
-const button3 = document.getElementById('>button');
-const button4 = document.getElementById('e_button');
-function t (){  document.getElementById('quiz').innerHTML = `      <div class="main_text">
+"use strict";
+var quiz1;
+var quiz2;
+var q1;
+var q2;
+var button1 = document.getElementById('m_button');
+var button2 = document.getElementById('<button');
+var button3 = document.getElementById('>button');
+var button4 = document.getElementById('e_button');
+function correct () {  document.getElementById('quiz').innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
             <h2 id="text2">　</h2>
-      </div>`
+      </div>`;
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
@@ -17,8 +18,8 @@ function t (){  document.getElementById('quiz').innerHTML = `      <div class="m
   button1.textContent = "次の問題へ";
   alert("正解！");
 }
-function f (){
-  document.getElementById('quiz').innerHTML = `      <div class="main_text">
+function incorrect() {
+  document.getElementById("quiz").innerHTML = `      <div class="main_text">
             <h2 id="text1">残念</h2>
             <h2 id="text2">　</h2>
       </div>`;
@@ -29,56 +30,57 @@ function f (){
   button1.textContent = "次の問題へ";
   alert("不正解！");
 }
-
-function create_quiz (){
-  var rdm1 = Math.round(Math.random());
-  var rdm5 = Math.round(Math.random());
-  var rdm3 = Math.round(Math.random());
-  var rdm6 = Math.round(Math.random());
-  if (rdm1 == "1"){
-    if (rdm5 == "1"){
-      var rdm2 = Number(Math.floor( Math.random() * 99) + 1);
-       quiz1 = "-√" + rdm2;
-       q1 = Number(-1*rdm2);
-    }else{
-      var rdm2 = Number(Math.floor( Math.random() * 99) + 1);
-      quiz1 = "√" + rdm2;
-      q1 = Number(rdm2);
-    };
-  } else {
-    if (rdm5 == "1"){
-      var rdm2 = Number(Math.floor( Math.random() * 99) + 1);
-      quiz1 = "-" + rdm2;
-      q1 = Number(-1*rdm2*rdm2);
-    }else{
-      var rdm2 = Number(Math.floor( Math.random() * 99) + 1);
-      quiz1 = rdm2;
-      q1 = Number(rdm2*rdm2);
-    };
-  };
-  if (rdm3 == "1"){
-    if (rdm6 == "1"){
-      var rdm4 = Number(Math.floor( Math.random() * 99) + 1);
-      quiz2 = "-√" + rdm4;
-      q2 = Number(-1*rdm4);
-    }else{
-      var rdm4 = Number(Math.floor( Math.random() * 99) + 1);
-      quiz2 = "√" + rdm4;
-      q2 = Number(rdm4);
+function create_quiz () {
+  var rand1 = Math.round(Math.random());
+  var rand2;
+  var rand3 = Math.round(Math.random());
+  var rand4;
+  var rand5 = Math.round(Math.random());
+  var rand6 = Math.round(Math.random());
+  if (rand1 === "1") {
+    if (rand5 === "1") {
+      rand2 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz1 = "-√" + rand2;
+      q1 = Number(-1 * rand2);
+    } else {
+      rand2 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz1 = "√" + rand2;
+      q1 = Number(rand2);
     }
-  }else {
-    if (rdm6 == "1"){
-      var rdm4 = Number(Math.floor( Math.random() * 99) + 1);
-      quiz2 = "-" + rdm4;
-      q2 = Number(-1*rdm4*rdm4);
-    }else{
-      var rdm4 = Number(Math.floor( Math.random() * 99) + 1);
-      quiz2 = rdm4;
-      q2 = Number(rdm4*rdm4);
-    };
-  };
-};
-function button_push1 (){
+  } else {
+    if (rand5 === "1") {
+      rand2 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz1 = "-" + rand2;
+      q1 = Number(-1 * rand2 * rand2);
+    } else {
+      rand2 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz1 = rand2;
+      q1 = Number(rand2 * rand2);
+    }
+  }
+  if (rand3 === "1") {
+    if (rand6 === "1") {
+      rand4 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz2 = "-√" + rand4;
+      q2 = Number(-1 * rand4);
+    } else {
+      rand4 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz2 = "√" + rand4;
+      q2 = Number(rand4);
+    }
+  } else {
+    if (rand6 === "1") {
+      rand4 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz2 = "-" + rand4;
+      q2 = Number(-1 * rand4 * rand4);
+    } else {
+      rand4 = Number(Math.floor(Math.random() * 99) + 1);
+      quiz2 = rand4;
+      q2 = Number(rand4 * rand4);
+    }
+  }
+}
+button1.addEventListener("click", function() {
   if (button1.textContent == "スタート！"){
     button1.hidden = true;
     button2.hidden = false;
@@ -89,7 +91,7 @@ function button_push1 (){
                 <h2 id="text1">どっちが大きい?</h2>
                 <h2 id="text2">${quiz1}　${quiz2}</h2>
     </div>`;
-  }else if(button1.textContent == "次の問題へ"){    
+  } else if (button1.textContent == "次の問題へ") {    
     button1.hidden = true;
     button2.hidden = false;
     button3.hidden = false;
@@ -100,22 +102,22 @@ function button_push1 (){
                 <h2 id="text2">${quiz1}　${quiz2}</h2>
             </div>`;
   };
-};
-function button_push2 (){
+});
+button2.addEventListener("click", function() {
   if (q1 < q2){
-    t();
-  }else{
-    f();
-    };
-  };
-function button_push3 (){
+    correct();
+  } else {
+    incorrect();
+  }
+});
+button3.addEventListener("click", function() {
   if (q1 > q2){
-    t();
-  }else{
-    f();
-  };
-};
-function button_push4 (){
+    correct();
+  } else {
+    incorrect();
+  }
+});
+button4.addEventListener("click", function() {
   button1.hidden = false;
   button2.hidden = true;
   button3.hidden = true;
@@ -125,8 +127,4 @@ function button_push4 (){
             <h2 id="text1">JavaScript式√どっちが大きい?</h2>
             <h2 id="text2">？　？</h2>
       </div>`;
-};
-button1.addEventListener("click",button_push1);
-button2.addEventListener("click",button_push2);
-button3.addEventListener("click",button_push3);
-button4.addEventListener("click",button_push4);
+});
