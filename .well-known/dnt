@@ -1,0 +1,9 @@
+{
+  "tracking": "N",
+  "compliance": [
+    "https://neconavikun.github.io/.well-known/dnt-policy.txt"
+  ],
+  "controller": [
+    "https://neconavikun.github.io/"
+  ]
+}
