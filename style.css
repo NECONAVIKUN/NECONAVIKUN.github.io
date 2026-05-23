@@ -102,7 +102,7 @@ section {
   justify-content: center;
   margin: 0;
   -webkit-text-stroke: 2px #484848;
-  font-size: clamp(14px, 3.5vw, 30px) !important;
+  font-size: 60px !important;
   white-space: nowrap;
 }
 .picture {
@@ -145,7 +145,7 @@ h1 {
   display: flex;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
-  font-size: clamp(24px, 6vw, 50px);
+  font-size: 100px;
   font-weight: 900;
   font-style: normal;
   margin: 0;
