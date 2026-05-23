@@ -3,6 +3,7 @@
 <html lang="ja" xml:lang="ja" dir="ltr" prefix="og: https://ogp.me/ns#" style="opacity: 1;"><head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="ねこナビくん">
     <meta name="description" content="私、ねこナビくんのJavaScript式謎ツールその1です。">
     <meta name="color-scheme" content="only light">
@@ -40,28 +41,25 @@
     <main id="main">
       <section>
         <div id="main">
-            <section id="quiz">
-                <div class="main_text">
-                    <h2 id="text1">JavaScript式√どっちが大きい?</h2>
-                </div>
-                <div class="main_text">
-                    <h2 id="text2">？　？</h2>
-                </div>
-            </section>
+          <section id="quiz">
+            <div class="main_text">
+              <h2 id="text1">JavaScript式√どっちが大きい?</h2>
+            </div>
+            <div class="main_text">
+              <h2 id="text2">？　？</h2>
+            </div>
+          </section>
           <section id="buttons">
-            <button id=">button" class="button" hidden>左が大</button>
-            <button id="<button" class="button" hidden>右が大</button>
-            <button id="m_button" class="button">スタート！</button>
-            <button id="e_button" class="button" hidden>終了</button>
+            <button type="button" id=">button" class="button" hidden>左が大</button>
+            <button type="button" id="<button" class="button" hidden>右が大</button>
+            <button type="button" id="m_button" class="button">スタート！</button>
+            <button type="button" id="e_button" class="button" hidden>終了</button>
           </section>
         </div>
-        <script src="r_main.js" async="" defer=""></script>
+        <script src="r_main.js" async defer></script>
       </section>
     </main>
     <hr>
     {% include footer.html %}
-
-  
-
   </body>
 </html>
