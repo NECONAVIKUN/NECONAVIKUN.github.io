@@ -3,9 +3,8 @@ body {
   white-space: nowrap;
 }
 header {
-  top: 0;
   width: 100vw;
-  height: 350px;
+  margin-bottom: 5px;
   background-color: #DCF4FF;
   margin: 0;
 }
