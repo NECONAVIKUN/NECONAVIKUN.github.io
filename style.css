@@ -23,7 +23,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   background-color: #DCF4FF;
   margin: 0;
   padding: 20px 10px;
@@ -47,12 +47,12 @@ main {
   margin: 2px;
   -webkit-text-stroke: 1.5px #484848;
   white-space: nowrap;
-  font-size: 25vw;
+  font-size: large;
 }
 footer {
   width: 100vw;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   background-color: #484848;
   margin: 0;
   & p { margin: 0; }
@@ -103,7 +103,7 @@ section {
   justify-content: space-between; 
   align-items: center;
   width: 100%;
-  padding: 0 40px; 
+  padding: 0 25px;
   margin: 15px auto 0;
 }
 .picture img {
@@ -128,7 +128,7 @@ section {
   margin-top: 15px;
 }
 .image, .image2 {
-  width: 25%;
+  width: 40%;
   height: auto;
   padding: 0;
   overflow: hidden;
