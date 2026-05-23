@@ -1,4 +1,4 @@
 [{
   "user_agent": "prefetch-proxy",
-  "fraction": 0.3
+  "fraction": 1.0
 }]
