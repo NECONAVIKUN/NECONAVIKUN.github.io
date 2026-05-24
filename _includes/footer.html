@@ -1,15 +1,15 @@
     <footer class="footer">
       <ul class="center">
-        <li><a href="/">ホーム</a></li>
-        <li><a href="../">上</a></li>
+        <li class="footer_link"><a href="/">ホーム</a></li>
+        <li class="footer_link"><a href="../">上</a></li>
         {% if page.url contains "/yukkuri/" %}
-        <li><a href="/yukkuri/">トップ</a></li>
+        <li class="footer_link"><a href="/yukkuri/">トップ</a></li>
         {% endif %}
         {% if page.url contains "/music/" %}
-        <li><a href="/music/">トップ</a></li>
+        <li class="footer_link"><a href="/music/">トップ</a></li>
         {% endif %}
         {% if page.url contains "/tools/" %}
-        <li><a href="/tools/">トップ</a></li>
+        <li class="footer_link"><a href="/tools/">トップ</a></li>
         {% endif %}
       </ul>
       <hr>
