@@ -197,4 +197,5 @@ ul {
   & a { display: inline; }
 }
 #quiz { display: block; }
+.hidden { display: none; }
 @media screen and (max-width: 767px) {}
