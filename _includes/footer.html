@@ -1,4 +1,18 @@
     <footer class="footer">
+      <ul class="center">
+        <li><a href="/">ホーム</a></li>
+        <li><a href="../">上</a></li>
+        {% if page.url contains "/yukkuri/" %}
+        <li><a href="/yukkuri/">トップ</a></li>
+        {% endif %}
+        {% if page.url contains "/music/" %}
+        <li><a href="/music/">トップ</a></li>
+        {% endif %}
+        {% if page.url contains "/tools/" %}
+        <li><a href="/tools/">トップ</a></li>
+        {% endif %}
+      </ul>
+      <hr>
       <p><img src="/space.webp" width="1px" height="10px" alt=""></p>
       <ul>
         <li class="footer_link" aria-current="page"><a href="/">ホーム</a></li>
