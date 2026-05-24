@@ -83,6 +83,7 @@ function create_quiz () {
     quiz2 = q2Num;
     q2 = q2Num * q2Num;
   }
+  if (q1 === q2) { create_quiz(); }
 }
 button1.addEventListener("click", function() {
   if (button1.textContent == "スタート！"){
