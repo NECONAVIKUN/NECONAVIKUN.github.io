@@ -33,52 +33,95 @@ function incorrect() {
   alert("不正解！");
 }
 function create_quiz () {
-  var rand1 = Math.round(Math.random());
-  var rand2;
-  var rand3 = Math.round(Math.random());
-  var rand4;
-  var rand5 = Math.round(Math.random());
-  var rand6 = Math.round(Math.random());
-  if (rand1 === "1") {
-    if (rand5 === "1") {
-      rand2 = Number(Math.floor(Math.random() * 99) + 1);
-      quiz1 = "-√" + rand2;
-      q1 = Number(-1 * rand2);
-    } else {
-      rand2 = Number(Math.floor(Math.random() * 99) + 1);
-      quiz1 = "√" + rand2;
-      q1 = Number(rand2);
-    }
-  } else {
-    if (rand5 === "1") {
-      rand2 = Number(Math.floor(Math.random() * 99) + 1);
+  var rand1 = null;
+  var rand2 = null;
+  var rand3 = null;
+  var rand4 = null;
+  var rand5 = null;
+  var rand6 = null;
+  if (window.crypto) {
+    rand1 = window.crypto.getRandomValues(new Uint8Array(1))[0] & 1;
+    rand3 = window.crypto.getRandomValues(new Uint8Array(1))[0] & 1;
+    rand5 = window.crypto.getRandomValues(new Uint8Array(1))[0] & 1;
+    rand6 = window.crypto.getRandomValues(new Uint8Array(1))[0] & 1;
+    if (rand1 === "1") {
+      if (rand5 === "1") {
+        rand2 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
+        quiz1 = "-√" + rand2;
+        q1 = -1 * rand2;
+      } else {
+        rand2 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
+        quiz1 = "√" + rand2;
+        q1 = rand2;
+      }
+    } else if (rand5 === "1") {
+      rand2 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
       quiz1 = "-" + rand2;
-      q1 = Number(-1 * rand2 * rand2);
+      q1 = -1 * rand2 * rand2;
     } else {
-      rand2 = Number(Math.floor(Math.random() * 99) + 1);
+      rand2 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
       quiz1 = rand2;
-      q1 = Number(rand2 * rand2);
-    }
-  }
-  if (rand3 === "1") {
-    if (rand6 === "1") {
-      rand4 = Number(Math.floor(Math.random() * 99) + 1);
-      quiz2 = "-√" + rand4;
-      q2 = Number(-1 * rand4);
+      q1 = rand2 * rand2;
+    } else if (rand3 === "1") {
+      if (rand6 === "1") {
+        rand4 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
+        quiz2 = "-√" + rand4;
+        q2 = -1 * rand4;
+      } else {
+        rand4 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
+        quiz2 = "√" + rand4;
+        q2 = rand4;
+      }
+    } else if (rand6 === "1") {
+      rand4 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
+      quiz2 = "-" + rand4;
+      q2 = -1 * rand4 * rand4;
     } else {
-      rand4 = Number(Math.floor(Math.random() * 99) + 1);
-      quiz2 = "√" + rand4;
-      q2 = Number(rand4);
+      rand4 = (window.crypto.getRandomValues(new Uint32Array(1))[0] % 99) + 1;
+      quiz2 = rand4;
+      q2 = rand4 * rand4;
     }
   } else {
-    if (rand6 === "1") {
-      rand4 = Number(Math.floor(Math.random() * 99) + 1);
-      quiz2 = "-" + rand4;
-      q2 = Number(-1 * rand4 * rand4);
+    rand1 = Math.round(Math.random());
+    rand3 = Math.round(Math.random());
+    rand5 = Math.round(Math.random());
+    rand6 = Math.round(Math.random());
+    if (rand1 === "1") {
+      if (rand5 === "1") {
+        rand2 = Math.floor(Math.random() * 99) + 1;
+        quiz1 = "-√" + rand2;
+        q1 = -1 * rand2;
+      } else {
+        rand2 = Math.floor(Math.random() * 99) + 1;
+        quiz1 = "√" + rand2;
+        q1 = rand2;
+      }
+    } else if (rand5 === "1") {
+      rand2 = Math.floor(Math.random() * 99) + 1;
+      quiz1 = "-" + rand2;
+      q1 = -1 * rand2 * rand2;
     } else {
-      rand4 = Number(Math.floor(Math.random() * 99) + 1);
+      rand2 = Math.floor(Math.random() * 99) + 1;
+      quiz1 = rand2;
+      q1 = rand2 * rand2;
+    } else if (rand3 === "1") {
+      if (rand6 === "1") {
+        rand4 = Math.floor(Math.random() * 99) + 1;
+        quiz2 = "-√" + rand4;
+        q2 = -1 * rand4;
+      } else {
+        rand4 = Math.floor(Math.random() * 99) + 1;
+        quiz2 = "√" + rand4;
+        q2 = rand4;
+      }
+    } else if (rand6 === "1") {
+      rand4 = Math.floor(Math.random() * 99) + 1;
+      quiz2 = "-" + rand4;
+      q2 = -1 * rand4 * rand4;
+    } else {
+      rand4 = Math.floor(Math.random() * 99) + 1;
       quiz2 = rand4;
-      q2 = Number(rand4 * rand4);
+      q2 = rand4 * rand4;
     }
   }
 }
