@@ -9,7 +9,7 @@ var button2 = document.getElementById("<button");
 var button3 = document.getElementById(">button");
 var button4 = document.getElementById("e_button");
 function correct () {
-  quizHTML = `      <div class="main_text">
+  quizElem.innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
             <h2 id="text2">　</h2>
       </div>`;
@@ -53,30 +53,30 @@ function create_quiz () {
   var q2Root = getRandomBin();
   var q2Minus = getRandomBin();
   var q2Num = getRandomInt();
-  if (q1Root === "1") {
-    if (q1Minus === "1") {
+  if (q1Root === 1) {
+    if (q1Minus === 1) {
       quiz1 = "-√" + q1Num;
       q1 = -1 * q1Num;
     } else {
       quiz1 = "√" + q1Num;
       q1 = q1Num;
     }
-  } else if (q1Minus === "1") {
+  } else if (q1Minus === 1) {
     quiz1 = "-" + q1Num;
     q1 = -1 * q1Num * q1Num;
   } else {
     quiz1 = q1Num;
     q1 = q1Num * q1Num;
   }
-  if (q2Root === "1") {
-    if (q2Minus === "1") {
+  if (q2Root === 1) {
+    if (q2Minus === 1) {
       quiz2 = "-√" + q2Num;
       q2 = -1 * q2Num;
     } else {
       quiz2 = "√" + q2Num;
       q2 = q2Num;
     }
-  } else if (q2Minus === "1") {
+  } else if (q2Minus === 1) {
     quiz2 = "-" + q2Num;
     q2 = -1 * q2Num * q2Num;
   } else {
