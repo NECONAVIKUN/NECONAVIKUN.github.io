@@ -137,7 +137,7 @@ h1 {
   color: #ffffff;
   -webkit-text-stroke: 2px #7ae9ff;
 }
-.title { color: #ffffff; font-size: 40px;  font-weight: 900;}
+.title { color: #ffffff; font-weight: 900;}
 .title-r { -webkit-text-stroke: 2px rgb(255 0 0); }
 .title-m { -webkit-text-stroke: 2px rgb(255 255 0); }
 .title-s { -webkit-text-stroke: 2px #1d853c; }
@@ -147,6 +147,12 @@ h1 {
 .right {
   margin: 0 0 0 20px;
   padding: 0;
+}
+.title h1{
+  font-size: 80px;
+}
+.title h2{
+  font-size: 40px;
 }
 .center, .mannnaka {
   display: flex;
