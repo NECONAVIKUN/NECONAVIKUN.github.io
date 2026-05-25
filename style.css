@@ -124,7 +124,7 @@ section {
 .image2 { margin-top: 5px; }
 #reimu {
   float: right;
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 h1 {
   display: flex;
@@ -199,3 +199,7 @@ ul {
 #quiz { display: block; }
 .hidden { display: none; }
 @media screen and (max-width: 767px) {}
+body {
+  margin: 0;
+  width:100vw;
+}
