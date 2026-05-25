@@ -87,7 +87,7 @@ section {
   color: #ffffff;
   display: flex;
   justify-content: center;
-  font-size: large !important;
+  font-size: 20px !important;
   margin: 0;
   -webkit-text-stroke: 2px #484848;
   white-space: nowrap;
