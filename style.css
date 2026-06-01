@@ -214,3 +214,10 @@ body {
 main{
   flex-grow: 1;
 }
+.sns_icon img{
+  height: 3vw;
+  width: 3vw;
+}
+.sns_icon a{
+  margin-left:1vw;
+}
