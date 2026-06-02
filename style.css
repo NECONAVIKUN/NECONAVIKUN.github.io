@@ -171,6 +171,7 @@ ul {
   flex-wrap: wrap;
   color: #ffffff;
   margin: 0;
+  padding: 0;
   & li { margin: 10px; }
 }
 .footer_link {
