@@ -72,7 +72,7 @@ section {
     background: #007bff;
     padding: 0.5vw 0.7vw;
     width: 100%;
-    max-width: 20vw;
+    max-width: 30vw;
     box-sizing: border-box;
     -webkit-text-stroke: 0.05vw #000000;
   }
