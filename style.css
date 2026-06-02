@@ -152,6 +152,7 @@ h1 {
 }
 h2{
   font-size: 3vw;
+  margin: 0;
 }
 .center, .mannnaka {
   display: flex;
