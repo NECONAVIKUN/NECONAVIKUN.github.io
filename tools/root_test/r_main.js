@@ -8,11 +8,19 @@ var button1 = document.getElementById("m_button");
 var button2 = document.getElementById("<button");
 var button3 = document.getElementById(">button");
 var button4 = document.getElementById("e_button");
+var seikai = document.getElementById("seisuu");
+var mondai = document.getElementById("toisuu")
+var monsuu;
+var seisuu;
 function correct () {
   quizElem.innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
             <h2 id="text2">　</h2>
       </div>`;
+  monsuu = monsuu + 1;
+  seisuu = seisuu + 1;
+  mondai.textContent = "解いた問題数:"+monsuu;
+  seikai.textContent = "正解数:"+seisuu;
   button1.removeAttribute("class");
   button2.setAttribute("class", "hidden");
   button3.setAttribute("class", "hidden");
@@ -25,6 +33,8 @@ function incorrect() {
             <h2 id="text1">残念</h2>
             <h2 id="text2">　</h2>
       </div>`;
+  monsuu = monsuu + 1;
+  mondai.textContent = "解いた問題数:"+monsuu;
   button1.removeAttribute("class");
   button2.setAttribute("class", "hidden");
   button3.setAttribute("class", "hidden");
@@ -92,6 +102,10 @@ button1.addEventListener("click", function() {
     button3.removeAttribute("class");
     button4.setAttribute("class", "hidden");
     create_quiz();
+    monsuu = 0;
+    seisuu = 0;
+    mondai.textContent = "解いた問題数:"+0;
+    seikai.textContent = "正解数:"+0;
     quizElem.innerHTML = `            <div class="main_text">
                 <h2 id="text1">どっちが大きい?</h2>
                 <h2 id="text2">${quiz1}　${quiz2}</h2>
@@ -132,4 +146,6 @@ button4.addEventListener("click", function() {
             <h2 id="text1">JavaScript式√どっちが大きい?</h2>
             <h2 id="text2">スタートボタンを押してね！</h2>
       </div>`;
+  mondai.textContent = "解いた問題数:-"
+  seikai.textContent = "正解数:-"
 });
