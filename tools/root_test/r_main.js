@@ -152,11 +152,7 @@ button3.addEventListener("click", function() {
   }
 });
 button4.addEventListener("click", function() {
-  var d = {
-    "total": score[0],
-    "correct": score[1],
-  };
-  var j = JSON.stringify(d);
+  var j = JSON.stringify(score);
   var e = new Date();
   e.setFullYear(e.getFullYear() + 1);
   document.cookie = "__Secure-SCORE=" + encodeURIComponent(j) +
