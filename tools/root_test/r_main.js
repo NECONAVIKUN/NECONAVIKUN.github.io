@@ -10,19 +10,25 @@ var button3 = document.getElementById(">button");
 var button4 = document.getElementById("e_button");
 var seikai = document.getElementById("seisuu");
 var mondai = document.getElementById("toisuu")
-var score = [0, 0];
 function getScore() {
   var n = "__Secure-SCORE=";
   var c = document.cookie;
-  if (!c || c.length === 0) return null;
-    var s = c.indexOf(n)
-    if (s !== -1) {
-      var i = c.indexOf(";", s);
-      if (i === -1) { i = c.length; }
-      var r = decodeURIComponent(c.substring(s + n.length, i));
-      return (r.length > 0) ? r : [0, 0];
-    } else { return [0, 0]; }
+  if (!c || c.length === 0) return [0, 0];
+  var s = c.indexOf(n);
+  if (s !== -1) {
+    var i = c.indexOf(";", s);
+    if (i === -1) { i = c.length; }
+    var r = decodeURIComponent(c.substring(s + n.length, i));
+    try {
+      return JSON.parse(r); 
+    } catch(e) {
+      return [0, 0];
+    }
+  } else { 
+    return [0, 0]; 
+  }
 }
+var score = getScore();
 function correct() {
   quizElem.innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
@@ -146,18 +152,16 @@ button3.addEventListener("click", function() {
   }
 });
 button4.addEventListener("click", function() {
-  function setConsentStatus(a) {
-    var d = {
-      "total": score[0],
-      "correct": score[1],
-    };
-    var j = JSON.stringify(d);
-    var e = new Date();
-    e.setFullYear(e.getFullYear() + 1);
-    document.cookie = "__Secure-SCORE=" + encodeURIComponent(j) +
-      "; expires=" + e.toUTCString() +
+  var d = {
+    "total": score[0],
+    "correct": score[1],
+  };
+  var j = JSON.stringify(d);
+  var e = new Date();
+  e.setFullYear(e.getFullYear() + 1);
+  document.cookie = "__Secure-SCORE=" + encodeURIComponent(j) +
+    "; expires=" + e.toUTCString() +
 "; path=/; domain=miikun95.net; Secure; SameSite=Strict";
-  }
   button1.removeAttribute("class");
   button2.setAttribute("class", "hidden");
   button3.setAttribute("class", "hidden");
