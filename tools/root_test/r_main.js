@@ -10,17 +10,28 @@ var button3 = document.getElementById(">button");
 var button4 = document.getElementById("e_button");
 var seikai = document.getElementById("seisuu");
 var mondai = document.getElementById("toisuu")
-var monsuu;
-var seisuu;
-function correct () {
+var score = [0, 0];
+function getScore() {
+  var n = "__Secure-SCORE=";
+  var c = document.cookie;
+  if (!c || c.length === 0) return null;
+    var s = c.indexOf(n)
+    if (s !== -1) {
+      var i = c.indexOf(";", s);
+      if (i === -1) { i = c.length; }
+      var r = decodeURIComponent(c.substring(s + n.length, i));
+      return (r.length > 0) ? r : [0, 0];
+    } else { return [0, 0]; }
+}
+function correct() {
   quizElem.innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
             <h2 id="text2">　</h2>
       </div>`;
-  monsuu = monsuu + 1;
-  seisuu = seisuu + 1;
-  mondai.textContent = "解いた問題数:"+monsuu;
-  seikai.textContent = "正解数:"+seisuu;
+  score[0]++;
+  score[1]++;
+  mondai.textContent = "解いた問題数:" + score[0];
+  seikai.textContent = "正解数:" + score[1];
   button1.removeAttribute("class");
   button2.setAttribute("class", "hidden");
   button3.setAttribute("class", "hidden");
@@ -33,8 +44,8 @@ function incorrect() {
             <h2 id="text1">残念</h2>
             <h2 id="text2">　</h2>
       </div>`;
-  monsuu = monsuu + 1;
-  mondai.textContent = "解いた問題数:"+monsuu;
+  score[0]++;
+  mondai.textContent = "解いた問題数:" + score[0];
   button1.removeAttribute("class");
   button2.setAttribute("class", "hidden");
   button3.setAttribute("class", "hidden");
@@ -56,7 +67,7 @@ function getRandomBin() {
     return Math.round(Math.random());
   }
 }
-function create_quiz () {
+function create_quiz() {
   var q1Root = getRandomBin();
   var q1Minus = getRandomBin();
   var q1Num = getRandomInt();
@@ -102,10 +113,8 @@ button1.addEventListener("click", function() {
     button3.removeAttribute("class");
     button4.setAttribute("class", "hidden");
     create_quiz();
-    monsuu = 0;
-    seisuu = 0;
-    mondai.textContent = "解いた問題数:"+0;
-    seikai.textContent = "正解数:"+0;
+    mondai.textContent = "解いた問題数:" + score[0];
+    seikai.textContent = "正解数:" + score[1];
     quizElem.innerHTML = `            <div class="main_text">
                 <h2 id="text1">どっちが大きい?</h2>
                 <h2 id="text2">${quiz1}　${quiz2}</h2>
@@ -137,6 +146,18 @@ button3.addEventListener("click", function() {
   }
 });
 button4.addEventListener("click", function() {
+  function setConsentStatus(a) {
+    var d = {
+      "total": id,
+      "correct": new Date().toISOString(),
+    };
+    var j = JSON.stringify(d);
+    var e = new Date();
+    e.setFullYear(e.getFullYear() + 1);
+    document.cookie = "__Secure-SCORE=" + encodeURIComponent(j) +
+      "; expires=" + e.toUTCString() +
+"; path=/; domain=miikun95.net; Secure; SameSite=Strict";
+  }
   button1.removeAttribute("class");
   button2.setAttribute("class", "hidden");
   button3.setAttribute("class", "hidden");
@@ -146,6 +167,6 @@ button4.addEventListener("click", function() {
             <h2 id="text1">JavaScript式√どっちが大きい?</h2>
             <h2 id="text2">スタートボタンを押してね！</h2>
       </div>`;
-  mondai.textContent = "解いた問題数:-"
-  seikai.textContent = "正解数:-"
+  mondai.textContent = "解いた問題数:" + score[0];
+  seikai.textContent = "正解数:" + score[1];
 });
