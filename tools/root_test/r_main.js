@@ -29,6 +29,8 @@ function getScore() {
   }
 }
 var score = getScore();
+mondai.textContent = "解いた問題数:" + score[0];
+seikai.textContent = "正解数:" + score[1];
 function correct() {
   quizElem.innerHTML = `      <div class="main_text">
             <h2 id="text1">おめでとう！</h2>
