@@ -148,8 +148,8 @@ button3.addEventListener("click", function() {
 button4.addEventListener("click", function() {
   function setConsentStatus(a) {
     var d = {
-      "total": id,
-      "correct": new Date().toISOString(),
+      "total": score[0],
+      "correct": score[1],
     };
     var j = JSON.stringify(d);
     var e = new Date();
