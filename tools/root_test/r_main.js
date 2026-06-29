@@ -157,7 +157,7 @@ button4.addEventListener("click", function() {
   e.setFullYear(e.getFullYear() + 1);
   document.cookie = "__Secure-SCORE=" + encodeURIComponent(j) +
     "; expires=" + e.toUTCString() +
-"; path=/; domain=neconavikun.github.io; Secure; SameSite=Strict";
+"; path=/; Secure; SameSite=Strict";
   button1.removeAttribute("class");
   button2.setAttribute("class", "hidden");
   button3.setAttribute("class", "hidden");
