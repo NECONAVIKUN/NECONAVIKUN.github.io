@@ -177,6 +177,7 @@ quitBtn.addEventListener("click", function() {
   corrects.textContent = "正解数:" + score[1];
 });
 clrBtn.addEventListener("click", function() {
+  score = [0, 0];
   var j = JSON.stringify(score);
   var e = new Date();
   e.setFullYear(e.getFullYear() + 1);
