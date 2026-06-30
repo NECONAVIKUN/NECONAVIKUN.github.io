@@ -5,9 +5,10 @@ var q1;
 var q2;
 var quizElem = document.getElementById("quiz");
 var button1 = document.getElementById("m_button");
-var button2 = document.getElementById("<button");
-var button3 = document.getElementById(">button");
+var button2 = document.getElementById("l_button");
+var button3 = document.getElementById("r_button");
 var button4 = document.getElementById("e_button");
+var clrBtn = document.getElementById("c_button");
 var seikai = document.getElementById("seisuu");
 var mondai = document.getElementById("toisuu")
 function getScore() {
@@ -169,6 +170,16 @@ button4.addEventListener("click", function() {
             <h2 id="text1">JavaScript式√どっちが大きい?</h2>
             <h2 id="text2">スタートボタンを押してね！</h2>
       </div>`;
+  mondai.textContent = "解いた問題数:" + score[0];
+  seikai.textContent = "正解数:" + score[1];
+});
+clrBtn.addEventListener("click", function() {
+  var j = JSON.stringify(score);
+  var e = new Date();
+  e.setFullYear(e.getFullYear() + 1);
+  document.cookie = "__Secure-SCORE=" + encodeURIComponent(j) +
+    "; expires=" + e.toUTCString() +
+"; path=/; Secure; SameSite=Strict";
   mondai.textContent = "解いた問題数:" + score[0];
   seikai.textContent = "正解数:" + score[1];
 });
