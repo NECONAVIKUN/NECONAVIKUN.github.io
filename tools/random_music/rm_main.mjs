@@ -1,4 +1,5 @@
 "use strict";
+/*
 var btnGen = document.getElementById('btn_gen');
 var btnPlay = document.getElementById('btn_play');
 var btnExport = document.getElementById('btn_export');
@@ -85,3 +86,4 @@ function createWavFile(samples, sampleRate) {
   }
   return buffer;
 }
+*/
