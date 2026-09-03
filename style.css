@@ -1,6 +1,8 @@
 * { font-family: "Zen Maru Gothic", sans-serif; }
 a { text-decoration: none;
    color: #ffffff;
+}
+#normal_link{
    text-decoration: underline;
 }
 button, .button, .button1 {
