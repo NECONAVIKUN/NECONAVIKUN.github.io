@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://NECONAVIKUN.github.io/</loc>
+    <loc>https://neconavikun.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://neconavikun.github.io/image/yukkuri/</loc>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://neconavikun.github.io/reimu-motion.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://neconavikun.github.io/marisa-motion.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://neconavikun.github.io/youmu-motion.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://neconavikun.github.io/syameimaru-motion.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://neconavikun.github.io/image/yukkuri/rireki/</loc>
     <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://NECONAVIKUN.github.io/yukkuri/</loc>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://NECONAVIKUN.github.io/reimu-motion.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://NECONAVIKUN.github.io/marisa-motion.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://NECONAVIKUN.github.io/youmu-motion.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://NECONAVIKUN.github.io/syameimaru-motion.webp</image:loc>
-    </image:image>
+  <url> 
+    <loc>https://neconavikun.github.io/image/</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://NECONAVIKUN.github.io/rireki/</loc>
+    <loc>https://neconavikun.github.io/tools/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neconavikun.github.io/music/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neconavikun.github.io/guideline/</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
