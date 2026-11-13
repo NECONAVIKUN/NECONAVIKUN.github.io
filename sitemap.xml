@@ -40,4 +40,8 @@
     <loc>https://neconavikun.github.io/guideline/</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://neconavikun.github.io/image/hoka/</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>
