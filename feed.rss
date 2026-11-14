@@ -1,48 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://w3.org">
-  <title>ねこナビくんのホームページ</title>
-  <link href="https://neconavikun.github.io"/>
-  <updated>2026-11-13T00:00:00Z</updated>
-  <author>
-    <name>ねこナビくん</name>
-  </author>
-  <id>https://neconavikun.github.io</id>
-
-  <!-- ページ1（インデックスさせたいページの数だけこの塊を増やす） -->
-  <entry>
-    <title>メインページ</title>
-    <link href="https://neconavikun.github.io/"/>
-    <id>https://neconavikun.github.io/</id>
-    <updated>2026-11-13T00:00:00Z</updated>
-  </entry>
-
-  <!-- ページ2 -->
-  <entry>
-    <title>画像素材配布ページ</title>
-    <link href="https://neconavikun.github.io/image/"/>
-    <id>https://neconavikun.github.io/image/</id>
-    <updated>2026-11-13T00:00:00Z</updated>
-  </entry>
-  
-  <entry>
-    <title>フリーBGM配布ページ</title>
-    <link href="https://neconavikun.github.io/music/"/>
-    <id>https://neconavikun.github.io/music/</id>
-    <updated>2026-11-13T00:00:00Z</updated>
-  </entry>
-
-  <entry>
-    <title>JavaScript式謎ツール集</title>
-    <link href="https://neconavikun.github.io/tools/"/>
-    <id>https://neconavikun.github.io/tools/</id>
-    <updated>2026-11-13T00:00:00Z</updated>
-  </entry>
-
-  <entry>
-    <title>素材ガイドライン</title>
-    <link href="https://neconavikun.github.io/guideline/"/>
-    <id>https://neconavikun.github.io/guideline/</id>
-    <updated>2026-11-13T00:00:00Z</updated>
-  </entry>
-
-</feed>
+<rss version="2.0">
+  <channel>
+    <title>ねこナビくんのホームページ</title>
+    <link>https://neconavikun.github.io/</link>
+    <description></description>
+    <language>ja</language>
+    <copyright>(C) 2026 ねこナビくん</copyright>
+    <pubDate>2026:01:01+09:00</pubDate>
+    <lastBuildDate>2026-11-14T13:15:00+09:00</lastBuildDate>
+    <ttl>10</ttl>
+    <image>
+      <url>https://neconavikun.github.io/NK.png</url>
+      <title>ねこナビくんのホームページ</title>
+      <link>https://neconavikun.github.io/</link>
+    </image>
+    <item>
+      <title>ねこナビくんのホームページ</title>
+      <link>https://blog.miikun95.net/article/000001/</link>
+      <description></description>
+      <guid>{477e9b2e-0d5f-4a7a-b8fa-d0c8b00d3e0a}</guid>
+      <pubDate>2026-11-14T15:30:00+09:00</pubDate>
+    </item>
+    <item>
+      <title>画像素材配布ページ</title>
+      <link>https://neconavikun.github.io/image/</link>
+      <pubDate>2026-11-14T15:30:00+09:00</pubDate>
+    </item>
+    <item>
+      <title>フリーBGM配布ページ</title>
+      <link>https://neconavikun.github.io/music/</link>
+      <pubDate>2026-11-14T15:30:00+09:00</updated>
+    </item>
+    <item>
+      <title>JavaScript式謎ツール集</title>
+      <link>https://neconavikun.github.io/tools/</link>
+      <pubDate>2026-11-14T15:30:00+09:00</updated>
+    </item>
+    <item>
+      <title>素材ガイドライン</title>
+      <link>https://neconavikun.github.io/guideline/</link>
+      <pubDate>2026-11-14T15:30:00+09:00</pubDate>
+    </item>
+  </channel>
+</rss>
