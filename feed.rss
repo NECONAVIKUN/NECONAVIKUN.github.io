@@ -24,21 +24,28 @@
     <item>
       <title>画像素材配布ページ</title>
       <link>https://neconavikun.github.io/image/</link>
+      <guid>{f3ba6be7-a44f-4b83-aa69-84dc3c37f367}</guid>
       <pubDate>2026-11-14T15:30:00+09:00</pubDate>
     </item>
     <item>
       <title>フリーBGM配布ページ</title>
       <link>https://neconavikun.github.io/music/</link>
+      <description></description>
+      <guid>{96ec744d-72e7-4c78-afe6-300d85ecd355}</guid>
       <pubDate>2026-11-14T15:30:00+09:00</pubDate>
     </item>
     <item>
       <title>JavaScript式謎ツール集</title>
       <link>https://neconavikun.github.io/tools/</link>
+      <description></description>
+      <guid>{5f85c5be-5a25-45e3-9219-707c982d8e93}</guid>
       <pubDate>2026-11-14T15:30:00+09:00</pubDate>
     </item>
     <item>
       <title>素材ガイドライン</title>
       <link>https://neconavikun.github.io/guideline/</link>
+      <description></description>
+      <guid>{c31d50aa-2c23-474e-a621-e89624cf73a5}</guid>
       <pubDate>2026-11-14T15:30:00+09:00</pubDate>
     </item>
   </channel>
